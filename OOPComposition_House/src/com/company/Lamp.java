@@ -3,12 +3,16 @@ package com.company;
 public class Lamp {
     private String style;
     private boolean battery;
-    private int globRating;
+    private int globeRating;
 
     public Lamp(String style, boolean battery, int globRating) {
         this.style = style;
         this.battery = battery;
-        this.globRating = globRating;
+        this.globeRating = globeRating;
+
+    }
+    public void turnOn(){
+        System.out.println("Lamp -> Turn On");
     }
 
     public String getStyle() {
@@ -20,6 +24,6 @@ public class Lamp {
     }
 
     public int getGlobRating() {
-        return globRating;
+        return globeRating;
     }
 }
